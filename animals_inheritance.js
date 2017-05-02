@@ -9,7 +9,7 @@ class Animal {
 
 class Cat extends Animal {
   constructor(leg, mamals, food) {
-    super(leg, mamals);
+    super(food);
     this.food = food;
     this.SuperPower = new SuperPower(this.food);
   }
@@ -22,7 +22,7 @@ class Cat extends Animal {
 
 class Otter extends Animal {
   constructor(leg, mamals, food) {
-    super(leg, mamals);
+    super(food);
     this.food = food;
     this.SuperPower = new SuperPower(this.food);
   }
@@ -35,7 +35,7 @@ class Otter extends Animal {
 
 class Chicken extends Animal {
   constructor(leg, mamals, food) {
-    super(leg, mamals)
+    super(leg, mamals, food)
     this.mamals_stat = mamals;
     this.leg_numb = leg;
     this.food = food;
@@ -50,7 +50,7 @@ class Chicken extends Animal {
 
 class Bobcats extends Animal {
   constructor(leg, mamals, food) {
-    super(leg, mamals);
+    super(food);
     this.food = food;
     this.SuperPower = new SuperPower(this.food);
   }
@@ -63,7 +63,7 @@ class Bobcats extends Animal {
 
 class Bulls extends Animal {
   constructor(leg, mamals, food) {
-    super(leg, mamals);
+    super(food);
     this.food = food;
     this.SuperPower = new SuperPower(this.food);
   }
@@ -133,11 +133,11 @@ class SuperPower {
 }
 
 var hewan = new Animal();
-var ocha = new Cat(4,true, 'Tasty Kitten');
-var linsang = new Otter(4, true, 'Pelet Linsang');
+var ocha = new Cat(3,true, 'Tasty Kitten');
+var linsang = new Otter(3, true, 'Pelet Linsang');
 var kate = new Chicken(2,false,'Pur 512');
-var charlotte = new Bobcats(4,true, 'Tikus liar');
-var chicago = new Bulls(4, true, 'Rumput');
+var charlotte = new Bobcats(3,true, 'Tikus liar');
+var chicago = new Bulls(3, true, 'Rumput');
 
 console.log(hewan);
 console.log(ocha.review);
