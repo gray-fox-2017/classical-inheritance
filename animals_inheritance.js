@@ -133,8 +133,8 @@ class SuperPower {
 }
 
 var hewan = new Animal();
-var ocha = new Cat(3,true, 'Tasty Kitten');
-var linsang = new Otter(3, true, 'Pelet Linsang');
+var ocha = new Cat(3,false, 'Tasty Kitten');
+var linsang = new Otter(3, false, 'Pelet Linsang');
 var kate = new Chicken(2,false,'Pur 512');
 var charlotte = new Bobcats(3,true, 'Tikus liar');
 var chicago = new Bulls(3, true, 'Rumput');
