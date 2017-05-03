@@ -10,27 +10,28 @@ class Animal {
 class Frog extends Animal {
   constructor(name,num_legs){
     super(name,num_legs);
+    this.num_legs = num_legs;
     this.is_warm_blooded = true
   }
 }
 
 class Bat extends Animal{
   constructor(name,num_legs){
-    super(name,num_legs);
+    super(name);
     this.is_warm_blooded = false
   }
 }
 
 class Chimpanzee extends Animal{
   constructor(name,num_legs){
-    super(name,num_legs);
+    super(name);
     this.is_warm_blooded = false
   }
 }
 
 class Fox extends Animal{
   constructor(name,num_legs){
-    super(name,num_legs);
+    super(name);
     this.num_legs = 4;
     this.is_warm_blooded = false
   }
@@ -38,7 +39,7 @@ class Fox extends Animal{
 
 class Chicken extends Animal{
   constructor(name,num_legs){
-    super(name,num_legs)
+    super(name)
     this.is_warm_blooded = false
   }
 }
@@ -52,7 +53,7 @@ class SuperPower{
   }
 }
 
-let frog = new Frog ('frogie')
+let frog = new Frog ('frogie',4)
 let bat = new Bat ('batie')
 let chimpanzee = new Chimpanzee ('chimpie')
 let fox = new Fox ('foxie')
