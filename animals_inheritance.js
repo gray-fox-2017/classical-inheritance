@@ -9,10 +9,14 @@ class Animal {
   }
 
   eat() {
-    console.log(`${this.name} is eating : Nyam.. Nyam..`);
+    return `${this.name} is eating : Nyam.. Nyam..`
   }
   something(){
     return 99
+  }
+
+  isWarmBlood() {
+    return this.warmBlood
   }
 
 }
@@ -26,7 +30,11 @@ class Cat extends Animal {
   // overidding & overloading
   eat(){
     let eat = super.eat()
-    return eat + ' sdkk;sk; '
+    return eat
+  }
+
+  warmBlood() {
+    return super.isWarmBlood()
   }
 
 }
@@ -35,6 +43,7 @@ class Bird extends Animal {
   constructor(name) {
     super(name);
     this.superPower = new SuperPower(name);
+
   }
 
   eat() {
@@ -45,6 +54,11 @@ class Bird extends Animal {
     this.numLegs = numLegs;
     console.log(`${this.name} has ${this.numLegs} legs, and happily running!`);
   }
+
+   warmBlood() {
+     return super.isWarmBlood()
+     //return warm
+   }
 
 }
 
